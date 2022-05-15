@@ -4,7 +4,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, './src/index/index.tsx'),
+  entry: path.resolve(__dirname, './src/index.tsx'),
   mode: 'development',
   devServer: {
     static: './development',
@@ -47,7 +47,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: './src/index/index.html' }),
+    new HtmlWebpackPlugin({ template: './src/index.html' }),
     new CleanWebpackPlugin(),
   ],
 };
